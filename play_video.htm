@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Presentation</title>
+  
+  <!-- Video.js CSS -->
+  <link href="VideoPlayer/video-js.min.css" rel="stylesheet" />
+
+  <style>
+    /* Ensure the body and html fill the viewport */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrollbars */
+    }
+
+    /* Video player style to take full screen */
+    #canva-video {
+      width: 100vw;  /* Full viewport width */
+      height: 100vh; /* Full viewport height */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video.js Player -->
+  <video id="canva-video" class="video-js vjs-default-skin" controls preload="auto" data-setup='{}'>
+    <source src="Videos/My_Presentation.mp4" type="video/mp4">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  <!-- Video.js JavaScript -->
+  <script src="VideoPlayer/video.min.js"></script>
+
+</body>
+</html>
